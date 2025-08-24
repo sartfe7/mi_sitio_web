@@ -1,56 +1,60 @@
-<style>
-    body {
-      background-color: rgb(206, 252, 242);
-    }
-    
-    h1 {
-      color: rgb(248, 196, 196);
-      margin-left: 40px;
-    } 
-    </style>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>4 Fotos Simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Música - Sarith Daniela</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table width="100%" height="400" border="0" cellpadding="0" cellspacing="0">
-        <tr height="120">
-            <td width="120" valign="top">
-                <img src="img/gf.jpeg" width="100" height="100">
-            </td>
-            <td></td>
-            <td width="120" valign="top" align="right">
-                <img src="img/LANZAMIENTO_KAPO.jpeg" width="100" height="100">
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td align="center" valign="middle">
-                <h2>Mi Musica</h2>
-                <p>Estos son algunos de mis cantantes favoritas, abajo aparecera mi cancion favorita del momento.</p>
-            </td>
-            <td></td>
-        </tr>
-        <tr height="120">
-            <td width="120" valign="bottom">
-                <img src="img/dany.jpg" width="100" height="100">
-            </td>
-            <td></td>
-            <td width="120" valign="bottom" align="right">
-                <img src="img/beele.jpg" width="100" height="100">
-            </td>
-        </tr>
-       
-    </table>
-    <br>
-    <center>
-   
-</center>
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2339UOI2SU3L1nJtUnx0GF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<center>
-<a href="index.html">Inicio</a>
-</center>
+    <div class="contenedor-principal">
+        <h1>Mi Música</h1>
+        
+        <table width="100%" border="0" cellpadding="20" cellspacing="0" style="margin: 30px 0;">
+            <tr>
+                <td width="120" valign="top">
+                    <img src="img/gf.jpeg" width="100" height="100" style="border-radius: 10px;">
+                </td>
+                <td></td>
+                <td width="120" valign="top" align="right">
+                    <img src="img/LANZAMIENTO_KAPO.jpeg" width="100" height="100" style="border-radius: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" valign="middle">
+                    <h2>Mi Música</h2>
+                    <p>Estos son algunos de mis cantantes favoritos, abajo aparecerá mi canción favorita del momento.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td width="120" valign="bottom">
+                    <img src="img/dany.jpg" width="100" height="100" style="border-radius: 10px;">
+                </td>
+                <td></td>
+                <td width="120" valign="bottom" align="right">
+                    <img src="img/beele.jpg" width="100" height="100" style="border-radius: 10px;">
+                </td>
+            </tr>
+        </table>
+        
+        <div style="margin: 30px 0;">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2339UOI2SU3L1nJtUnx0GF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+        <hr>
+        
+        <div class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="nacimiento.html">Mi nacimiento</a>
+            <a href="familia.html">Mi familia</a>
+            <a href="educacion.html">Mi educación</a>
+            <a href="amigos.html">Mis amigos</a>
+            <a href="hobbies.html">Mis hobbies</a>
+            <a href="proyecto_vida.html">Mi proyecto de vida?</a>
+            <a href="horario.html">Mi horario</a>
+        </div>
+    </div>
 </body>
 </html>

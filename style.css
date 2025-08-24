@@ -1,0 +1,332 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuración del body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Contenedor principal para centrar contenido */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para títulos */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #4ecdc4;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Estilos para párrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #444;
+    padding: 0 10px;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Contenedor para imágenes flotantes */
+.imagen-flotante {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+/* Limpiar flotadores */
+.clear {
+    clear: both;
+}
+
+/* Estilos para enlaces de navegación */
+.navegacion {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.navegacion a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #764ba2, #667eea);
+}
+
+/* Contenedor de imágenes con flexbox */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.texto-centro {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contenedor-imagenes img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Estilos específicos para cada página */
+.pagina-familia {
+    background: linear-gradient(135deg, #b0a9f3, #e8dff5);
+}
+
+.pagina-nacimiento {
+    background: linear-gradient(135deg, #dfadf0, #f5d5ff);
+}
+
+.pagina-amigos {
+    background: linear-gradient(135deg, #a8e6a0, #d4f5d0);
+}
+
+.pagina-educacion {
+    background: linear-gradient(135deg, #f5b4dc, #ffd4e5);
+}
+
+.pagina-hobbies {
+    background: linear-gradient(135deg, #c6fdcd, #e8ffe8);
+}
+
+.pagina-musica {
+    background: linear-gradient(135deg, #cefcf2, #f0fffc);
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para listas */
+ul, ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Estilos para texto enfatizado */
+b, strong {
+    color: #667eea;
+    font-weight: bold;
+}
+
+em, i {
+    color: #764ba2;
+}
+
+/* Línea horizontal decorativa */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+/* Contenedor para proyecto de vida */
+.proyecto-columnas {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.columna {
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.columna h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.columna-estudio {
+    background: linear-gradient(135deg, #ae8ee9, #c8b5f0);
+}
+
+.columna-trabajo {
+    background: linear-gradient(135deg, #c0ffe2, #e0fff0);
+}
+
+.columna-familia {
+    background: linear-gradient(135deg, #e5c3f5, #f0d9ff);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .contenedor-principal {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contenedor-imagenes {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagen-flotante {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+    }
+    
+    .navegacion a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .proyecto-columnas {
+        flex-direction: column;
+    }
+    
+    table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .contenedor-imagenes img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}
